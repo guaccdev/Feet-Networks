@@ -1,6 +1,13 @@
 body { 
     background-color: #2b2b2b;
     animation: fadeout 3s; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
 }
 
 img {
