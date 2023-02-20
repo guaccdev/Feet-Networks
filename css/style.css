@@ -146,6 +146,8 @@ body {
     flex-direction: column;
     z-index: 3;
     left: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .navitem {
