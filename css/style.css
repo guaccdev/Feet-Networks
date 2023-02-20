@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 div.games {
-    display: flex;
     justify-content: center;
     margin: auto;
     width: 250px;
