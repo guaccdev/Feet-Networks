@@ -11,7 +11,7 @@ div.games {
     background-color: #ffffff;
     display: inline-block;
     right:50%;
-
+    transition: transform 100ms;
   }
 
   div.gtext {
