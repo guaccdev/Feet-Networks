@@ -35,6 +35,32 @@
       .menu-links.active {
         transform: translateX(0%);
       }
+      /* Center the game boxes and use a flexbox */
+      .games-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .game-box {
+        margin: 20px;
+        text-align: center;
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+      }
+
+      .game-box img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .game-box p {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
     </style>
   </head>
   <body>
@@ -61,64 +87,62 @@
     </div>
 
     <div class="container">
-
-<!-- Game Icon Start -->
-  <div class="gtext">
-    <a href="games/2048/index.html">
-      <div class="games">
-          <img src="images/games/2048.png" alt="2048image" style="width:100%">
+      <!-- Game Icon Start -->
+      <div class="gtext">
+        <a href="games/2048/index.html">
+          <div class="games">
+            <img src="images/games/2048.png" alt="2048image" style="width: 100%;" />
             <div class="gtext">
               <p>2048</p>
+            </div>
           </div>
-        </div>
-      </div>
-    </a>
+        </a>
 
-<!-- Game Icon Start -->
-  <div class="gtext">
-    <a href="games/achievementunlocked/index.html">
-      <div class="games">
-          <img src="images/games/achievementunlocked.gif" alt="achievementimage" style="width:100%">
+        <!-- Game Icon Start -->
+        <div class="gtext">
+          <a href="games/achievementunlocked/index.html">
+            <div class="games">
+              <img src="images/games/achievementunlocked.gif" alt="achievementimage" style="width: 100%;" />
+              <div class="gtext">
+                <p>Achievement Unlocked</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Game Icon Start -->
           <div class="gtext">
-            <p>Achievement Unlocked</p>
+            <a href="games/adarkroom/index.html">
+              <div class="games">
+                <img src="images/games/adarkroom.png" alt="darkroomimage" style="width: 100%;" />
+                <div class="gtext">
+                  <p>A Darkroom</p>
+                </div>
+              </div>
+            </a>
           </div>
+          <script src="js/particles.js"></script>
+          <script src="js/app.js"></script>
+          <script async src="https://arc.io/widget.min.js#1PfS9Zss"></script>
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+            AOS.init();
+          </script>
+          <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+            new Crate({
+                server: '1076251340302467164', // Feet networks
+                channel: '1076251341296500769' // # chat
+            })
+          </script>
+          <script>
+            // Hamburger Menu JS
+            const menuIcon = document.querySelector(".menu-icon");
+            const menuLinks = document.querySelector(".menu-links");
+            menuIcon.addEventListener("click", () => {
+              menuLinks.classList.toggle("active");
+            });
+          </script>
         </div>
       </div>
-    </a>
-
-<!-- Game Icon Start -->
-  <div class="gtext">
-    <a href="games/adarkroom/index.html">
-      <div class="games">
-          <img src="images/games/adarkroom.png" alt="darkroomimage" style="width:100%">
-          <div class="gtext">
-            <p>A Darkroom</p>
-          </div>
-        </div>
-      </div>
-    </a>
-
     </div>
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-    <script async src="https://arc.io/widget.min.js#1PfS9Zss"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-      new Crate({
-          server: '1076251340302467164', // Feet networks
-          channel: '1076251341296500769' // # chat
-      })
-    </script>
-    <script>
-      // Hamburger Menu JS
-      const menuIcon = document.querySelector(".menu-icon");
-      const menuLinks = document.querySelector(".menu-links");
-      menuIcon.addEventListener("click", () => {
-        menuLinks.classList.toggle("active");
-      });
-    </script>
   </body>
 </html>
