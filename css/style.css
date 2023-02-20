@@ -7,8 +7,10 @@ div.games {
     border-radius: 50px;
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
   }
-  
+
   div.gtext {
     padding: 10px;
     color: #2b2b2b;
