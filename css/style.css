@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 div.games {
+    display: flex;
+    justify-content: center;
+    margin: auto;
     width: 250px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     border-radius: 50px;
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+
   }
 
   div.gtext {
