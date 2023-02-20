@@ -132,3 +132,24 @@ a:hover {
   transform: translateY(-40%) !important;
 }
 
+body {
+    width: calc(100% - 223px);
+    margin-left: auto;
+}
+
+.navbar {
+    position: fixed;
+    background: white;
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    left: 0;
+}
+
+.navitem {
+    cursor: pointer !important;
+    border-radius: 0;
+    text-align: left;
+}
