@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feet Networks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <style>
+      body {
+        overflow: hidden;
+      }
+      /* Center the hamburger menu vertically and horizontally */
+      .hamburger-menu {
+        position: fixed;
+        top: 20%;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: 10;
+      }
+      .menu-icon {
+        padding: 5px;
+        font-size: 20px;
+      }
+      .menu-links {
+        position: relative;
+        top: 40%;
+        transform: translateY(-50%);
+        width: 200px;
+        padding: 20px;
+        color: #fff;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        transform-origin: left center;
+        transform: translateX(-110%);
+      }
+
+      /* Show the menu links when the "active" class is added */
+      .menu-links.active {
+        transform: translateX(0%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu">
+      <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="menu-links">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="/soundboard.html">Soundboard</a></li>
+          <li><a href="proxy.html">Proxy</a></li>
+          <li><a href="/calc/index.html">Algebra Calculator</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="particles-js"></div>
+    <div class="container">
+      <h1>Welcome to Feet Networks!</h1>
+      <h2>Your spot to be entertained.</h2>
+      <ul>
+        <li><a href="games/bitlife/index.html">Bitlife</a></li>
+        <li><a href="games/cluster-rush/index.html">Cluster Rush</a></li>
+        <li><a href="games/rooftop-snipers/index.html">Rooftop Snipers</a></li>
+        <li><a href="games/backrooms">Backrooms</a></li>
+        <li><a href="games/basketball-stars">Basketball Stars</a></li>
+      </ul>
+      <p>Games provided by 3kh0</p>
+    </div>
+
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script async src="https://arc.io/widget.min.js#1PfS9Zss"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+      new Crate({
+          server: '1076251340302467164', // Feet networks
+          channel: '1076251341296500769' // # chat
+      })
+    </script>
+    <script>
+      // Hamburger Menu JS
+      const menuIcon = document.querySelector(".menu-icon");
+      const menuLinks = document.querySelector(".menu-links");
+      menuIcon.addEventListener("click", () => {
+        menuLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+body { 
+    background-color: #2b2b2b;
+    animation: fadeout 3s; 
+}
+
+img {
+  display: inline-block;
+}
+
+
+@keyframes fadeout {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+
+.brlarge {
+display: block;
+margin-bottom: 2em;
+}
