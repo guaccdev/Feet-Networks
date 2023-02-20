@@ -42,22 +42,15 @@
     </style>
   </head>
   <body>
-    <!-- Hamburger Menu -->
-    <div class="hamburger-menu">
-      <div class="menu-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      <div class="menu-links">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/soundboard.html">Soundboard</a></li>
-          <li><a href="/proxy.html">Proxy</a></li>
-          <li><a href="/calc/index.html">Algebra Calculator</a></li>
-        </ul>
-      </div>
-      <div class="menu-overlay"></div>
+    <!-- Nav -->
+    <div class="navbar">
+      <a href="/" class="navitem">Home</a>
+      <a href="/about.html" class="navitem">About</a>
+      <a href="/proxy.html" class="navitem">Proxy</a>
+      <a href="/soundboard.html" class="navitem">Soundboard</a>
+      <a href="/calc/index.html" class="navitem">Algebra Calculator</a>
     </div>
+    
     <div id="particles-js"></div>
     <div class="container">
       <!-- Soundboard iFrame -->
@@ -77,15 +70,5 @@
     </script>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
-    <script>
-      const menuIcon = document.querySelector(".menu-icon");
-      const menuLinks = document.querySelector(".menu-links");
-      const menuOverlay = document.querySelector(".menu-overlay");
-
-      menuIcon.addEventListener("click", () => {
-        menuLinks.classList.toggle("active");
-        menuOverlay.classList.toggle("active");
-      });
-    </script>
   </body>
 </html>
