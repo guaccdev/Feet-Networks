@@ -140,12 +140,12 @@ body {
 .navbar {
     position: fixed;
     background: white;
-    height: 100%;
+    height: 50%;
     width: fit-content;
     display: flex;
     flex-direction: column;
     z-index: 3;
-    left: 0;
+    left: 0.5;
     top: 0;
     bottom: 0;
 }
