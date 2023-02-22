@@ -3,10 +3,10 @@
 div.games {
     justify-content: center;
     margin: auto;
-    width: 50px;
+    width: 100px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
-    border-radius: 20px;
+    border-radius: 50px;
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
     display: inline-block;
@@ -140,12 +140,12 @@ body {
 .navbar {
     position: fixed;
     background: white;
-    height: 50%;
+    height: 40%;
     width: fit-content;
     display: flex;
     flex-direction: column;
     z-index: 3;
-    left: 0.5;
+    left: 0;
     top: 0;
     bottom: 0;
 }
