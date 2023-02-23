@@ -53,7 +53,7 @@ color: #000000;
 font-family: 'OCR A Std', monospace;
 position: center;
       width: calc(100% - 223px);
-    margin-left: auto;
+    margin-center: auto;
 }
 
 /* Center the content vertically and horizontally */
@@ -160,5 +160,5 @@ body {
 }
 
 .navitem:hover {
-  color: #fffff; 
+  color: #ffffff; 
 }
