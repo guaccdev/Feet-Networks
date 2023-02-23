@@ -69,7 +69,7 @@ position: center;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  position: absolute;
+  position: relative;
   z-index: 2;
 }
 
