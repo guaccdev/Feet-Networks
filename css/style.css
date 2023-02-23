@@ -48,10 +48,11 @@ html, body, ul {
 
 /* Set a background color for the page */
 body {
-  background-color: #2b2b2b;
-  color: #ffffff;
-  font-family: 'OCR A Std', monospace;
-  position: relative;
+background-color: #ffffff;
+color: #000000;
+font-family: 'OCR A Std', monospace;
+position: relative;
+}
 }
 
 /* Center the content vertically and horizontally */
