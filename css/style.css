@@ -140,14 +140,9 @@ body {
 }
  
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fafafa; /* Set the background color of the navbar */
-  padding: 10px; /* Add some padding to the navbar */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Add a box shadow to the navbar */
-  z-index: 9999; /* Set the z-index of the navbar */
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navitem {
