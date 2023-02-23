@@ -52,7 +52,10 @@ background-color: #ffffff;
 color: #000000;
 font-family: 'OCR A Std', monospace;
 position: relative;
-}
+    body {
+  width: 100%;
+  overflow-x: hidden;
+
 }
 
 /* Center the content vertically and horizontally */
