@@ -52,6 +52,9 @@ background-color: #ffffff;
 color: #000000;
 font-family: 'OCR A Std', monospace;
 position: center;
+      width: calc(100% - 223px);
+    margin-left: auto;
+}
     body {
   width: 100%;
   overflow-x: hidden;
