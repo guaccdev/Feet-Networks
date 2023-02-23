@@ -55,11 +55,6 @@ position: center;
       width: calc(100% - 223px);
     margin-left: auto;
 }
-    body {
-  width: 100%;
-  overflow-x: hidden;
-
-}
 
 /* Center the content vertically and horizontally */
 .container {
