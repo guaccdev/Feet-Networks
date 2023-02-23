@@ -22,7 +22,7 @@
         font-size: 20px;
       }
       .menu-links {
-        position: relative;
+         position: relative;
         top: 40%;
         transform: translateY(-50%);
         width: 200px;
@@ -38,6 +38,27 @@
       .menu-links.active {
         transform: translateX(0%);
       }
+        .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+      }
+       .navitem {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .navitem:hover {
+        color: #fffff;
     </style>
   </head>
   <body>
