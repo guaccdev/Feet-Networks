@@ -69,6 +69,7 @@ position: center;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  position: absolute;
   z-index: 2;
 }
 
