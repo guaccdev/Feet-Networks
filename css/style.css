@@ -71,7 +71,7 @@ position: center;
 
 /* Style the heading and paragraph text */
 h1, p {
-  text-align: center;
+  text-align:fixed;
   margin-bottom: 1.5rem;
 }
 
@@ -109,7 +109,7 @@ a {
 }
 
 a:hover {
-  background-color: #2b2b2b;
+  background-color: #000000;
   color: #fff;
 }
 
