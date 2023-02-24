@@ -142,7 +142,7 @@ a:hover {
   display:flex;
   align-items: center;
   justify-content: center;
-  z-index: 2;
+  z-index: 5;
 }
 
 .navitem {
@@ -152,7 +152,7 @@ a:hover {
   font-size: 18px; 
   font-weight: bold; 
   text-transform: uppercase;
-  z-index: 2;
+  z-index: 5;
 }
 
 .navitem:hover {
