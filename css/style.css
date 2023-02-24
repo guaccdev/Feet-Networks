@@ -158,3 +158,8 @@ a:hover {
 .navitem:hover {
   color: #ffffff; 
 }
+
+#gameimg {
+  width: 148px;
+  height: 148px;
+}
