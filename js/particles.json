@@ -11,7 +11,7 @@
       "value": "#000000"
     },
     "shape": {
-      "type": "circle",
+      "type": "star",
       "stroke": {
         "width": 0,
         "color": "#000000"
@@ -55,7 +55,7 @@
     "move": {
       "enable": true,
       "speed": 6,
-      "direction": "right",
+      "direction": "down",
       "random": false,
       "straight": false,
       "out_mode": "out",
