@@ -1,100 +1,226 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Feet Networks</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <style>
-      body {
-        overflow: hidden;
-      }
-      /* Center the hamburger menu vertically and horizontally */
-      .hamburger-menu {
-        position: fixed;
-        top: 20%;
-        left: 0;
-        transform: translateY(-50%);
-        z-index: 10;
-      }
-      <link rel="icon" type="image/png" href="favicon.png">
 
-      .menu-icon {
-        padding: 5px;
-        font-size: 20px;
-      }
-      .menu-links {
-         position: relative;
-        top: 40%;
-        transform: translateY(-50%);
-        width: 200px;
-        padding: 20px;
-        color: #fafafa;
-        text-align: center;
-        transition: all 0.3s ease-in-out;
-        transform-origin: left center;
-        transform: translateX(-110%);
-        cursor: pointer;
+<head>
+  <title>Feet Networks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <style>
+    body {
+      overflow: hidden;
+    }
+
+    p {
+      margin: 0px !important;
+    }
+
+    /* Center the hamburger menu vertically and horizontally */
+    .hamburger-menu {
+      position: fixed;
+      top: 20%;
+      left: 0;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+
+    .menu-icon {
+      padding: 5px;
+      font-size: 20px;
+    }
+
+    .menu-links {
+      position: relative;
+      top: 40%;
+      transform: translateY(-50%);
+      width: 200px;
+      padding: 20px;
+      color: #fafafa;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+      transform-origin: left center;
+      transform: translateX(-110%);
+      cursor: pointer;
+    }
+
+    /* Show the menu links when the "active" class is added */
+    .menu-links.active {
+      transform: translateX(0%);
+    }
+
+    * {
+      list-style-type: none;
+      color: var(--text-color1);
+    }
+
+    .navbar {
+      cursor: pointer;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      /* background-color: #fafafa; */
+      padding: 10px;
+      /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.0); */
+      z-index: 9999;
+    }
+
+    body {
+      background: var(--bg-accent1);
+      --btn-rounding: 15px;
+      --bg-accent1: rgb(40, 40, 40);
+      --bg-accent2: rgb(50, 50, 50);
+      --text-color1: rgb(255, 255, 255);
+      --text-shadow: rgba(20, 20, 20, 0.5);
+      --btn-accent: rgba(60, 60, 60);
+      --btn-accent2: rgba(60, 60, 60, 0.75);
+      --btn-box-shadow: rgba(70, 70, 70, 0.5);
+      --nav-box-hover: var(--text-color1);
+      --theme-accent: #38B6FF;
+    }
+
+    .navbar>ul>li>a {
+      display: flex;
+      padding: 0.75em;
+      align-items: center;
+      gap: 5px;
+      color: rgb(255, 255, 255);
+      background-color: rgba(60, 60, 60);
+      border-radius: 15px;
+      border: solid 1px rgb(40, 40, 40);
+    }
+
+    .navitem {
+      margin-right: 0px;
+    }
+
+    .navitem:hover {
+      color: #fafafa;
+    }
+
+    .Navigation {
+      width: 100%;
+      height: 70px;
+      display: flex;
+      border-radius: 0 0 25px 25px;
+    }
+
+    .Navigation-Container {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    .Navigation-Container ul {
+      gap: 15px;
+      display: flex;
+      position: absolute;
+      transform: translate(15px);
+      z-index: 10000;
+    }
+
+    .Navigation-Button a {
+      display: flex;
+      padding: 0.75em;
+      align-items: center;
+      gap: 5px;
+      color: var(--text-color1);
+      background-color: var(--btn-accent);
+      border-radius: var(--btn-rounding);
+      border: 1px solid var(--btn-accent);
+      cursor: pointer;
+    }
+
+    .Navigation-Button a:hover {
+      border: 1px solid var(--theme-accent);
+      transition: 0.75s;
+    }
+
+    @keyframes rainbowanim {
+      0% {
+        background-position: 0% 50%;
       }
 
-      /* Show the menu links when the "active" class is added */
-      .menu-links.active {
-        transform: translateX(0%);
-      }
-        .navbar {
-          cursor: pointer;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: ##fafafa;
-        padding: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.0);
-        z-index: 9999;
-      }
-       .navitem {
-        color: #fafafafa;
-        text-decoration: none;
-        margin-right: 20px;
-        font-size: 18px;
-        font-weight: bold;
-        text-transform: uppercase;
-         cursor: pointer;
+      50% {
+        background-position: 100% 50%;
       }
 
-      .navitem:hover {
-        color: #fafafa;
-    </style>
-  </head>
-  <body>
-    <!-- Nav -->
-    <div class="navbar">
-      <a href="/" class="navitem">Home</a>
-      <a href="/about.html" class="navitem">About</a>
-      <a href="/games.html" class="navitem">Games</a>
-      <a href="/proxy.html" class="navitem">Proxy</a>
-      <a href="/soundboard.html" class="navitem">Soundboard</a>
-      <a href="/calc/index.html" class="navitem">Calculator</a>
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Nav -->
+  <div class="Navigation">
+    <div class="Navigation-Container">
+      <ul>
+        <li class="Navigation-Button">
+          <a href="/" class="navitem">
+            <i class="las la-home"></i>
+            <p>Home</p>
+          </a>
+        </li>
+        <li class="Navigation-Button">
+          <a href="/about.html" class="navitem">
+            <i class="las la-file"></i>
+            <p>About</p>
+          </a>
+        </li>
+        <li class="Navigation-Button">
+          <a href="/games.html" class="navitem">
+            <i class="las la-puzzle-piece"></i>
+            <p>Games</p>
+          </a>
+        </li>
+        <li class="Navigation-Button">
+          <a href="/proxy.html" class="navitem">
+            <i class="las la-hourglass-half"></i>
+            <p>Proxy</p>
+          </a>
+        </li>
+        <li class="Navigation-Button">
+          <a href="/soundboard.html" class="navitem">
+            <i class="las la-music"></i>
+            <p>Soundboard</p>
+          </a>
+        </li>
+        <li class="Navigation-Button">
+          <a href="/calc/index.html" class="navitem">
+            <i class="las la-cog"></i>
+            <p>Calculator</p>
+          </a>
+        </li>
+      </ul>
     </div>
+  </div>
 
-    <div id="particles-js"></div>
-    <div class="container">
-      <h1>Welcome to Feet Networks!</h1>
-      <h2>Your spot to be entertained.</h2>
-    </div>
+  <div id="particles-js"></div>
+  <div class="container">
+    <h1 style="background: linear-gradient(45deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #04F26C, #6500FF, #04F297); -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%; animation: rainbowanim 10s ease infinite;">Welcome to Feet Networks!</h1>
+    <h2>Your spot to be entertained.</h2>
+  </div>
 
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-   <script async src="https://arc.io/widget.min.js#u98tsbkg"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-      new Crate({
-          server: '1076251340302467164', // Feet networks
-          channel: '1076251341296500769' // # chat
-      })
-    </script>
-  </body>
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+  <script async src="https://arc.io/widget.min.js#u98tsbkg"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+    new Crate({
+      server: '1076251340302467164', // Feet networks
+      channel: '1076251341296500769' // # chat
+    })
+  </script>
+</body>
+
 </html>
