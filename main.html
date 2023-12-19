@@ -194,8 +194,9 @@
           <a href="/calc/index.html" class="navitem">
             <i class="las la-cog"></i>
             <p>Calculator</p
-
-  <!-- Search Bar -->
+          </a>
+        </li>
+  Search Bar
   <form class="search-form" action="/search" method="GET">
     <input type="text" name="q" placeholder="Search...">
     <button type="submit"><i class="fas fa-search"></i></button>
@@ -206,6 +207,32 @@
       </ul>
     </div>
   </div>
+  <style>
+    .search-form {
+      display: flex;
+      justify-content: flex-end; /* Align to the right */
+      margin-top: 20px;
+      margin-right: 20px; /* Add right margin to create space */
+    }
+
+    .search-form input {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .search-form button {
+      padding: 10px 15px;
+      background-color: var(--btn-accent); /* Match the button color in your navigation */
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</body>
+</html>
 
   <div id="particles-js"></div>
   <div class="container">
