@@ -34,7 +34,7 @@ aside,
 details,
 figcaption,
 figure,
-footer,
+/* footer, */
 header,
 hgroup,
 main,
@@ -80,7 +80,7 @@ mark {
 }
 .img-thumbnail,
 body {
-  background-color: #fff;
+  background-color: #f8f8fb;
 }
 .btn,
 .btn-danger.active,
@@ -1460,7 +1460,8 @@ output {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 4px;
-  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -webkit-transition: border-color ease-in-out 0.15s,
+    box-shadow ease-in-out 0.15s;
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
@@ -2776,8 +2777,10 @@ tbody.collapse.in {
   padding: 10px 15px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 1px 0 rgba(255, 255, 255, 0.1);
   margin: 7.5px -15px;
 }
 @media (min-width: 968px) {
@@ -3358,6 +3361,7 @@ html {
 }
 .upper-wrapper {
   min-height: 90%;
+  width: 100%;
 }
 .mp-subhead h1 > a {
   color: #333;
@@ -3462,7 +3466,9 @@ html {
   color: #2d6da3;
 }
 .smallblue {
-  font-family: Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", Nunito, Helvetica, "Helvetica Neue", sans-serif;
+  font-family: Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, "Fira Sans", "Droid Sans", Nunito, Helvetica,
+    "Helvetica Neue", sans-serif;
   font-size: 15px;
   color: #337ab7;
 }
@@ -3582,8 +3588,13 @@ html {
 @font-face {
   font-family: FontAwesome;
   src: url(../fonts/fontawesome-webfont.eot?v=4.6.3);
-  src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3) format("embedded-opentype"), url(../fonts/fontawesome-webfont.woff2?v=4.6.3) format("woff2"), url(../fonts/fontawesome-webfont.woff?v=4.6.3) format("woff"),
-    url(../fonts/fontawesome-webfont.ttf?v=4.6.3) format("truetype"), url(../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular) format("svg");
+  src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3)
+      format("embedded-opentype"),
+    url(../fonts/fontawesome-webfont.woff2?v=4.6.3) format("woff2"),
+    url(../fonts/fontawesome-webfont.woff?v=4.6.3) format("woff"),
+    url(../fonts/fontawesome-webfont.ttf?v=4.6.3) format("truetype"),
+    url(../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular)
+      format("svg");
   font-weight: 400;
   font-style: normal;
 }
@@ -4724,7 +4735,8 @@ a.btn-ghost {
   color: #fff;
 }
 .header h1.logo {
-  font-family: Futura, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", Nunito, sans-serif;
+  font-family: Futura, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, "Fira Sans", "Droid Sans", Nunito, sans-serif;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 700;
@@ -4901,7 +4913,9 @@ a.btn {
   background: 0 0;
 }
 body {
-  font-family: Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", Nunito, Helvetica, "Helvetica Neue", sans-serif;
+  font-family: Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, "Fira Sans", "Droid Sans", Nunito, Helvetica,
+    "Helvetica Neue", sans-serif;
   color: #444;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -5015,7 +5029,7 @@ textarea {
 .video-container iframe {
   max-width: 100%;
 }
-.footer {
+/* .footer {
   background: #253340;
   color: #fff;
   font-size: 14px;
@@ -5138,7 +5152,7 @@ textarea {
 }
 .footer .bottom-bar .copyright {
   line-height: 1.6;
-}
+} */
 @media (max-width: 767px) {
   .config-wrapper,
   .header .main-nav .nav .dropdown-menu:before {
@@ -5424,16 +5438,21 @@ textarea {
 }
 .fm-math,
 fmath {
-  font-family: STIXGeneral, "DejaVu Serif", "DejaVu Sans", Times, "Lucida Sans Unicode", OpenSymbol, "Standard Symbols L", serif;
+  font-family: STIXGeneral, "DejaVu Serif", "DejaVu Sans", Times,
+    "Lucida Sans Unicode", OpenSymbol, "Standard Symbols L", serif;
   line-height: 1.2;
 }
 .fm-mo,
 .ma-sans-serif,
 fmath mo {
-  font-family: STIXGeneral, "DejaVu Sans", "DejaVu Serif", "Lucida Sans Unicode", "Arial Unicode MS", "Lucida Grande", Times, OpenSymbol, "Standard Symbols L", sans-serif;
+  font-family: STIXGeneral, "DejaVu Sans", "DejaVu Serif", "Lucida Sans Unicode",
+    "Arial Unicode MS", "Lucida Grande", Times, OpenSymbol, "Standard Symbols L",
+    sans-serif;
 }
 .fm-mo-Luc {
-  font-family: STIXGeneral, "DejaVu Sans", "DejaVu Serif", "Lucida Sans Unicode", "Lucida Grande", "Arial Unicode MS", Times, OpenSymbol, "Standard Symbols L", sans-serif;
+  font-family: STIXGeneral, "DejaVu Sans", "DejaVu Serif", "Lucida Sans Unicode",
+    "Lucida Grande", "Arial Unicode MS", Times, OpenSymbol, "Standard Symbols L",
+    sans-serif;
 }
 * html .IE6-LSU,
 * html .fm-math,
@@ -5446,7 +5465,9 @@ mo.fm-radic {
   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, sans-serif !important;
 }
 .ma-script {
-  font-family: "England Hand DB", "Embassy BT", "Amazone BT", "Bank Script D", "URW Chancery L", "Lucida Calligraphy", "Apple Chancery", "Monotype Corsiva", Corsiva, "Vivaldi D", Gabriola, "Segoe Script", cursive;
+  font-family: "England Hand DB", "Embassy BT", "Amazone BT", "Bank Script D",
+    "URW Chancery L", "Lucida Calligraphy", "Apple Chancery", "Monotype Corsiva",
+    Corsiva, "Vivaldi D", Gabriola, "Segoe Script", cursive;
 }
 .ma-fraktur {
   font-family: UnifrakturMaguntia, Impact, fantasy;
@@ -5603,7 +5624,11 @@ mtable.ma-binom > mtr:first-child > mtd {
 @font-face {
   font-family: Symbola;
   src: url(font/Symbola.eot);
-  src: local("Symbola Regular"), local("Symbola"), url(font/Symbola.woff2) format("woff2"), url(font/Symbola.woff) format("woff"), url(font/Symbola.ttf) format("truetype"), url(font/Symbola.otf) format("opentype"),
+  src: local("Symbola Regular"), local("Symbola"),
+    url(font/Symbola.woff2) format("woff2"),
+    url(font/Symbola.woff) format("woff"),
+    url(font/Symbola.ttf) format("truetype"),
+    url(font/Symbola.otf) format("opentype"),
     url(font/Symbola.svg#Symbola) format("svg");
 }
 .mq-editable-field {
