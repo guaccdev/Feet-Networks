@@ -34,6 +34,9 @@
         padding: 0;
         font-family: "Rajdhani", sans-serif;
       }
+      body {
+        background: #f8f8fb;
+      }
       .header {
         width: 100%;
         height: 80px;
@@ -143,6 +146,44 @@
           }
         }
       }
+      .footer {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        padding: 0px 350px;
+        flex-direction: column;
+        gap: 16px;
+        background-color: #fff;
+      }
+      .social-link {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+      }
+      .footer-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .footer-content {
+        color: #3e3f5e;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 14px; /* 100% */
+      }
+      .spec-text {
+        color: #00c7d9;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 14px;
+      }
+      /* a {
+        text-decoration: none;
+      } */
     </style>
   </head>
 
@@ -191,6 +232,36 @@
           here...) If you have any feedback or suggestions for our website,
           please feel free to contact us using the WidgetBot chat widget below,
           or join the actual discord!
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div style="width: 100%; opacity: 0.2">
+        <hr />
+      </div>
+      <div class="footer-wrapper">
+        <div class="footer-logo">
+          <a href="/"
+            ><img src="./images/footer-logo.png" alt="footer-logo"
+          /></a>
+        </div>
+        <div class="social-link">
+          <a href="#" class="link">
+            <img src="./images/f-link.png" alt="facebook" />
+          </a>
+          <a href="#" class="link">
+            <img src="./images/t-link.png" alt="twitter" />
+          </a>
+          <a href="#" class="link">
+            <img src="./images/i-link.png" alt="instagram" />
+          </a>
+          <a href="#" class="link">
+            <img src="./images/y-link.png" alt="youtube" />
+          </a>
+        </div>
+        <div class="footer-content">
+          © 2023, FEET NETWORKS by
+          <span class="spec-text">MINDSTAR DESIGNED</span>
         </div>
       </div>
     </div>
