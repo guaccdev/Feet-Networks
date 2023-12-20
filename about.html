@@ -1,209 +1,99 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>About | Feet Networks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
 
-<head>
-  <title>About | Feet Networks</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <link rel="stylesheet" type="text/css"
-    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-  <style>
-    body {
-      overflow: hidden;
-    }
-
-    /* Center the hamburger menu vertically and horizontally */
-    .hamburger-menu {
-      position: fixed;
-      top: 13%;
-      left: 0;
-      transform: translateY(-50%);
-      z-index: 10;
-    }
-
-    .menu-icon {
-      padding: 5px;
-      font-size: 20px;
-    }
-
-    .menu-links {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 200px;
-      padding: 20px;
-      color: #fff;
-      text-align: center;
-      transition: all 0.3s ease-in-out;
-      transform-origin: left center;
-      transform: translateX(-110%);
-    }
-
-    /* Show the menu links when the "active" class is added */
-    .menu-links.active {
-      transform: translateX(0%);
-    }
-
-    .Navigation {
-      width: 100%;
-      height: 70px;
-      display: flex;
-      border-radius: 0 0 25px 25px;
-    }
-
-    .Navigation-Container {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      width: 100%;
-    }
-
-    .Navigation-Container ul {
-      gap: 15px;
-      display: flex;
-      position: absolute;
-      transform: translate(15px);
-      z-index: 10000;
-    }
-
-    .Navigation-Button a {
-      display: flex;
-      padding: 0.75em;
-      align-items: center;
-      gap: 5px;
-      color: var(--text-color1);
-      background-color: var(--btn-accent);
-      border-radius: var(--btn-rounding);
-      border: 1px solid var(--btn-accent);
-      cursor: pointer;
-    }
-
-    .Navigation-Button a:hover {
-      border: 1px solid var(--theme-accent);
-      transition: 0.75s;
-    }
-
-    * {
-      list-style-type: none;
-      color: var(--text-color1);
-    }
-
-    p {
-      margin: 0px !important;
-      text-align: center;
-    }
-
-    body {
-      background: var(--bg-accent1);
-      --btn-rounding: 15px;
-      --bg-accent1: rgb(40, 40, 40);
-      --bg-accent2: rgb(50, 50, 50);
-      --text-color1: rgb(255, 255, 255);
-      --text-shadow: rgba(20, 20, 20, 0.5);
-      --btn-accent: rgba(60, 60, 60);
-      --btn-accent2: rgba(60, 60, 60, 0.75);
-      --btn-box-shadow: rgba(70, 70, 70, 0.5);
-      --nav-box-hover: var(--text-color1);
-      --theme-accent: #38B6FF;
-    }
-
-    .navitem {
-      margin-right: 0px;
-    }
-
-    @keyframes rainbowanim {
-      0% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Nav -->
-  <div class="Navigation">
-    <div class="Navigation-Container">
-      <ul>
-        <li class="Navigation-Button">
-          <a href="/" class="navitem">
-            <i class="las la-home"></i>
-            <p>Home</p>
-          </a>
-        </li>
-        <li class="Navigation-Button">
-          <a href="/about.html" class="navitem">
-            <i class="las la-file"></i>
-            <p>About</p>
-          </a>
-        </li>
-        <li class="Navigation-Button">
-          <a href="/games.html" class="navitem">
-            <i class="las la-puzzle-piece"></i>
-            <p>Games</p>
-          </a>
-        </li>
-        <li class="Navigation-Button">
-          <a href="/proxy.html" class="navitem">
-            <i class="las la-hourglass-half"></i>
-            <p>Proxy</p>
-          </a>
-        </li>
-        <li class="Navigation-Button">
-          <a href="/soundboard.html" class="navitem">
-            <i class="las la-music"></i>
-            <p>Soundboard</p>
-          </a>
-        </li>
-        <li class="Navigation-Button">
-          <a href="/calc/index.html" class="navitem">
-            <i class="las la-cog"></i>
-            <p>Calculator</p>
-          </a>
-        </li>
-      </ul>
+  <body>
+    <div class="header">
+      <a href="/" class="logo">
+        <img src="./images/logo1.png" alt="logo" />
+      </a>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+          <li>
+            <a href="/about.html">About</a>
+          </li>
+          <li>
+            <a href="/games.html">Game</a>
+          </li>
+          <li>
+            <a href="/proxy.html">Proxy</a>
+          </li>
+          <li>
+            <a href="/soundboard.html">Soundboard</a>
+          </li>
+          <li>
+            <a href="/calc/index.html">Calculator</a>
+          </li>
+        </ul>
+      </div>
+      <a class="header-button">Login</a>
     </div>
-  </div>
-
-  <div id="particles-js"></div>
-  <div class="container">
-    <div style="padding: 15px; text-align: center;">
-      <h1 style="background: linear-gradient(45deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #04F26C, #6500FF, #04F297); -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-size: 400% 400%; animation: rainbowanim 10s ease infinite;">About Feet Networks</h1>
-      <p>
-        We are a website that provides fun and entertaining games for our users. Our games are free to play and can be
-        enjoyed on any device.
-      </p>
-      <p>
-        This was created by 3kh0, 0rca, and of course f4eet. The background is particles.js and pretty much everything
-        else is custom. We also have arc to help site speed, and the WidgetBot crate. Hello! (f4eet was here...)
-      </p>
-
-      <p>
-        If you have any feedback or suggestions for our website, please feel free to contact us using the WidgetBot chat
-        widget below, or join the actual discord!
-      </p>
+    <div class="container">
+      <div class="game-section">
+        <div class="game-banner">
+          <img src="./images/about-banner.png" alt="about-banner" />
+        </div>
+        <div class="about-page-wrapper">
+          <div class="about-title">About Feet Networks</div>
+          <div class="content">
+            We are a website that provides fun and entertaining games for our
+            users. Our games are free to play and can be enjoyed on any device.
+            This was created by 3kh0, 0rca, and of course f4eet. The background
+            is particles.js and pretty much everything else is custom. We also
+            have arc to help site speed, and the WidgetBot crate. Hello! (f4eet
+            was here...) If you have any feedback or suggestions for our
+            website, please feel free to contact us using the WidgetBot chat
+            widget below, or join the actual discord!
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <script src="js/particles.js"></script>
-  <script src="js/app.js"></script>
-  <script async src="https://arc.io/widget.min.js#1PfS9Zss"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-    new Crate({
-      server: '1076251340302467164', // Feet networks
-      channel: '1076251341296500769' // # chat
-    })
-  </script>
-</body>
-
+    <div class="footer">
+      <div style="width: 100%; opacity: 0.2">
+        <hr />
+      </div>
+      <div class="footer-wrapper">
+        <div class="footer-logo">
+          <a href="/"
+            ><img src="./images/footer-logo.png" alt="footer-logo"
+          /></a>
+        </div>
+        <div class="social-link">
+          <a href="#" class="link">
+            <img src="./images/f-link.png" alt="facebook" />
+          </a>
+          <a href="#" class="link">
+            <img src="./images/t-link.png" alt="twitter" />
+          </a>
+          <a href="#" class="link">
+            <img src="./images/i-link.png" alt="instagram" />
+          </a>
+          <a href="#" class="link">
+            <img src="./images/y-link.png" alt="youtube" />
+          </a>
+        </div>
+        <div class="footer-content">
+          © 2023, FEET NETWORKS by
+          <span class="spec-text">MINDSTAR DESIGNED</span>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
