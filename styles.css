@@ -212,3 +212,33 @@ li {
   margin-top: 48px;
   margin-bottom: 48px;
 }
+.proxy-search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.proxy-input {
+  max-width: 994px;
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  padding: 17.5px 60px 16.5px 18px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+
+  width: 100%;
+  color: #3e3f5e;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  background-image: url("./images/search.png");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+.proxy-input:focus {
+  border: none;
+  outline: none;
+}
