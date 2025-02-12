@@ -1,179 +1,197 @@
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <link rel="stylesheet" href="css/style.css" /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-@@ -16,7 +16,68 @@
-      type="text/css"
-      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family: "Rajdhani", sans-serif;
-      }
-      .header {
-        width: 100%;
-        height: 80px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 36px;
-        background-color: #615dfa;
-      }
-      .logo {
-        cursor: pointer;
-      }
-      .menu {
-        ul {
-          display: flex;
-          flex-direction: row;
-          gap: 36px;
-          li {
-            list-style-type: none;
-            a {
-              text-decoration: none;
-              color: white;
-              text-transform: uppercase;
-              font-size: 18px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 80px; /* 571.429% */
-            }
-          }
-        }
-      }
-      .header-button {
-        border-radius: 10px;
-        background: #23d2e2;
-        box-shadow: 4px 7px 12px 0px rgba(35, 210, 226, 0.2);
-        cursor: pointer;
-        padding: 16px 26px;
-        color: #fff;
-        text-align: center;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 14px; /* 100% */
-      }
-      /* a {
-        text-decoration: none;
-      } */
-    </style>
-    <!-- <style>
-      body {
-        overflow: hidden;
-      }
-@@ -160,8 +221,8 @@
-          background-position: 0% 50%;
-        }
-      }
-    </style> -->
-    <!-- <style>
-      .search-form {
-        display: flex;
-        justify-content: flex-end; /* Align to the right */
-@@ -186,12 +247,40 @@
-        border-radius: 5px;
-        cursor: pointer;
-      }
-    </style> -->
-  </head>
+<!DOCTYPE html>
+<html>
 
-  <body>
-    <!-- Nav -->
-    <div class="header">
-      <a href="/" class="logo">
-        <img src="./images/logo1.png" alt="logo" />
-      </a>
-      <div class="menu">
-        <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/about.html">About</a>
-          </li>
-          <li>
-            <a href="/games.html">Game</a>
-          </li>
-          <li>
-            <a href="/proxy.html">Proxy</a>
-          </li>
-          <li>
-            <a href="/soundboard.html">Soundboard</a>
-          </li>
-          <li>
-            <a href="/calc/index.html">Calculator</a>
-          </li>
-        </ul>
-      </div>
-      <a class="header-button">Login</a>
+<head>
+  <title>Proxy | Feet Networks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <style>
+    body {
+      overflow: hidden;
+    }
+    /* Center the hamburger menu vertically and horizontally */
+    .hamburger-menu {
+      position: fixed;
+      top: 17%;
+      left: 0;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+    .menu-icon {
+      padding: 5px;
+      font-size: 20px;
+    }
+    .menu-links {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 200px;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+      transform-origin: left center;
+      transform: translateX(-110%);
+    }
+    /* Show the menu links when the "active" class is added */
+    .menu-links.active {
+      transform: translateX(0%);
+    }
+    .Navigation {
+      width: 100%;
+      height: 70px;
+      display: flex;
+      border-radius: 0 0 25px 25px;
+    }
+    .Navigation-Container {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      width: 100%;
+    }
+    .Navigation-Container ul {
+      gap: 15px;
+      display: flex;
+      position: absolute;
+      transform: translate(15px);
+      z-index: 10000;
+    }
+    .Navigation-Button a {
+      display: flex;
+      padding: 0.75em;
+      align-items: center;
+      gap: 5px;
+      color: var(--text-color1);
+      background-color: var(--btn-accent);
+      border-radius: var(--btn-rounding);
+      border: 1px solid var(--btn-accent);
+      cursor: pointer;
+    }
+    .Navigation-Button a:hover {
+      border: 1px solid var(--theme-accent);
+      transition: 0.75s;
+    }
+    * {
+      list-style-type: none;
+      color: var(--text-color1);
+    }
+    p {
+      margin: 0px !important;
+    }
+    body {
+      background: var(--bg-accent1);
+      --btn-rounding: 15px;
+      --bg-accent1: rgb(40, 40, 40);
+      --bg-accent2: rgb(50, 50, 50);
+      --text-color1: rgb(255, 255, 255);
+      --text-shadow: rgba(20, 20, 20, 0.5);
+      --btn-accent: rgba(60, 60, 60);
+      --btn-accent2: rgba(60, 60, 60, 0.75);
+      --btn-box-shadow: rgba(70, 70, 70, 0.5);
+      --nav-box-hover: var(--text-color1);
+      --theme-accent: #38B6FF;
+    }
+    .navitem {
+      margin-right: 0px;
+    }
+    @keyframes rainbowanim {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Nav -->
+  <div class="Navigation">
+    <div class="Navigation-Container">
+      <ul>
+        <li class="Navigation-Button">
+          <a href="/" class="navitem">
+            <i class="las la-home"></i>
+            <p>Home</p>
+          </a>
+        </li>
+        <li class="Navigation-Button">
+          <a href="/about.html" class="navitem">
+            <i class="las la-file"></i>
+            <p>About</p>
+          </a>
+        </li>
+        <li class="Navigation-Button">
+          <a href="/games.html" class="navitem">
+            <i class="las la-puzzle-piece"></i>
+            <p>Games</p>
+          </a>
+        </li>
+        <li class="Navigation-Button">
+          <a href="/proxy.html" class="navitem">
+            <i class="las la-hourglass-half"></i>
+            <p>Proxy</p>
+          </a>
+        </li>
+        <li class="Navigation-Button">
+          <a href="/soundboard.html" class="navitem">
+            <i class="las la-music"></i>
+            <p>Soundboard</p>
+          </a>
+        </li>
+        <li class="Navigation-Button">
+          <a href="/calc/index.html" class="navitem">
+            <i class="las la-cog"></i>
+            <p>Calculator</p>
+          </a>
+        </li>
+      </ul>
     </div>
-    <!-- <div class="Navigation">
-      <div class="Navigation-Container">
-        <ul>
-          <li class="Navigation-Button">
-@@ -237,7 +326,6 @@
-        action="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        method="GET"
-      >
-        <input type="text" name="q" placeholder="Search..." />
-        <button type="submit"><i class="fas fa-search"></i></button>
-      </form>
-@@ -246,46 +334,46 @@
-        <input type="text" name="q" placeholder="Search..." />
-        <button type="submit"><i class="fas fa-search"></i></button>
-      </form>
-    </div> -->
+  </div>
+  <div id="particles-js"></div>
+  <div class="container">
+    <h1 style="background: linear-gradient(45deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #04F26C, #6500FF, #04F297); -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%; animation: rainbowanim 10s ease infinite;">Proxy</h1>
+    <input autocomplete="off" id="search" placeholder="Enter URL or search" style="color: #000;"/>
+  </div>
+  <script src="/js/particles.js"></script>
+  <script src="/js/app.js"></script>
+  <script async src="https://arc.io/widget.min.js#1PfS9Zss"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+    new Crate({
+      server: '1076251340302467164', // Feet networks
+      channel: '1076251341296500769' // # chat
+    })
+  </script>
+  <script src="/stomp/bootstrapper.js"></script>
+  <script>
+    var search = document.getElementById("search");
+    var Stomp = new StompBoot({
+      bare_server: "https://uv.sys32.dev/",
+      directory: "/stomp/",
+      loglevel: StompBoot.LOG_ERROR,
+      codec: StompBoot.CODEC_XOR,
+    });
+    var StompSearch = new StompBoot.SearchBuilder("https://google.com/search?q=%s");
+    search.addEventListener("keyup", function (e) {
+      var search = document.getElementById("search");
 
-    <div id="particles-js"></div>
-    <div class="container">
-      <h1
-        style="
-          background: linear-gradient(
-            45deg,
-            #ff0000,
-            #ff7f00,
-            #ffff00,
-            #00ff00,
-            #0000ff,
-            #04f26c,
-            #6500ff,
-            #04f297
-          );
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-size: 400% 400%;
-          animation: rainbowanim 10s ease infinite;
-        "
-      >
-        Welcome to Feet Networks!
-      </h1>
-      <h2>Your spot to be entertained.</h2>
-    </div>
-
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-    <script async src="https://arc.io/widget.min.js#u98tsbkg"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-      new Crate({
-        server: '1076251340302467164', // Feet networks
-        channel: '1076251341296500769' // # chat
-      })
-    </script>
-  </body>
+      if (e.key == "Enter" && search.value) {
+        window.location = Stomp.html(StompSearch.query(search.value));
+      }
+    });
+  </script>
+</body>
 </html>
