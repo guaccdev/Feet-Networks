@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>proxy | negative</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proxy | Negative</title>
+
+  <!-- Bootstrap CSS (Add link to CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
@@ -128,7 +134,7 @@
 </head>
 
 <body>
-  <!-- Nav -->
+  <!-- Navigation Bar -->
   <div class="Navigation">
     <div class="Navigation-Container">
       <ul>
@@ -173,12 +179,20 @@
   </div>
 
   <div id="particles-js"></div>
-  <div class="container">
-    <h1 style="background: linear-gradient(45deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #04F26C, #6500FF, #04F297); -webkit-background-clip: text;
+  <div class="container mt-5">
+    <h1 class="text-center" style="background: linear-gradient(45deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #04F26C, #6500FF, #04F297); -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 400% 400%; animation: rainbowanim 10s ease infinite;">Proxy</h1>
-    <input autocomplete="off" id="search" placeholder="Enter URL or search" style="color: #000;"/>
+    
+    <form id="proxy-form" class="d-flex justify-content-center">
+      <input autocomplete="off" id="search" class="form-control w-50" placeholder="Enter URL or search" style="color: #000;"/>
+      <button type="submit" class="btn btn-primary ms-3">Go</button>
+    </form>
   </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  
   <script src="/js/particles.js"></script>
   <script src="/js/app.js"></script>
   <script async src="https://arc.io/widget.min.js#1PfS9Zss"></script>
@@ -205,11 +219,11 @@
 
     var StompSearch = new StompBoot.SearchBuilder("https://google.com/search?q=%s");
 
-    search.addEventListener("keyup", function (e) {
-      var search = document.getElementById("search");
-
-      if (e.key == "Enter" && search.value) {
-        window.location = Stomp.html(StompSearch.query(search.value));
+    // Redirect search to proxy
+    document.getElementById("proxy-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (search.value) {
+        window.location.href = Stomp.html(StompSearch.query(search.value));
       }
     });
   </script>
